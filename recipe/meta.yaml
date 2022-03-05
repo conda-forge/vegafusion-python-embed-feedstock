@@ -11,7 +11,7 @@ source:
   sha256: 155530fce0a812facc6606f51cf4b2505e29f31d2d3ec29a2e58ab9968fdbb3c
 
 build:
-  number: 0
+  number: 1
   script: |
     export RUSTFLAGS="--cfg unsound_local_offset"     # [not win]
     set "RUSTFLAGS=--cfg unsound_local_offset"        # [win]
