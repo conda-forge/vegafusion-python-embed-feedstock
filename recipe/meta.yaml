@@ -1,6 +1,6 @@
 {% set name = "vegafusion-python-embed" %}
 {% set name_under = "vegafusion_python_embed" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name_under[0] }}/{{ name_under }}/{{ name_under }}-{{ version }}.tar.gz
-  sha256: cbe56204eff49b9c62a2a28289e17cbd9a89d599ecbd6f4e4f94e577030c0330
+  sha256: 5ff9aaf40964f7a5f13419670ed7648f7aa6ba3eda8388196e7e1bc5add8ac0f
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('rust') }}
+    - protobuf
     - cargo-bundle-licenses
   host:
     - python
