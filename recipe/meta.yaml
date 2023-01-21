@@ -1,6 +1,6 @@
 {% set name = "vegafusion-python-embed" %}
 {% set name_under = "vegafusion_python_embed" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name_under[0] }}/{{ name_under }}/{{ name_under }}-{{ version }}.tar.gz
-  sha256: 059cfb7d57d9bd49de0ceeaae98c1f65c10f77bb6967057b4a2808b599ae16c8
+  sha256: a178dead3e676f701e5e0ea5df988811590f675d62d75cbcf6380aa45120dc05
 
 build:
-  number: 1
+  number: 0
   script: |
     cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     {{ PYTHON }} -m pip install . -vv
