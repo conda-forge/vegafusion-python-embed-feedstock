@@ -1,6 +1,6 @@
 {% set name = "vegafusion-python-embed" %}
 {% set name_under = "vegafusion_python_embed" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name_under[0] }}/{{ name_under }}/{{ name_under }}-{{ version }}.tar.gz
-  sha256: 059cfb7d57d9bd49de0ceeaae98c1f65c10f77bb6967057b4a2808b599ae16c8
+  sha256: e36d87b2be3fc2ef00cba91210ea1d38bec320c64346462eb6762bbaba4589bf
 
 build:
-  number: 1
+  number: 0
   script: |
     cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     {{ PYTHON }} -m pip install . -vv
@@ -38,8 +38,8 @@ test:
 
 about:
   home: https://vegafusion.io
-  license: AGPL-3.0-or-later
-  license_family: GPL
+  license: BSD-3
+  license_family: BSD
   license_file:
     - LICENSE
     - THIRDPARTY.yml
@@ -49,7 +49,7 @@ about:
     VegaFusion provides serverside acceleration for the Vega visualization grammer. The vegafusion-python-embed
     package is generally used as a dependency of higher-level, pure-Python, packages like vegafusion-jupyter.
   doc_url: https://vegafusion.io
-  dev_url: https://github.com/vegafusion/vegafusion
+  dev_url: https://github.com/hex-inc/vegafusion
 
 extra:
   recipe-maintainers:
