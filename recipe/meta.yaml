@@ -38,8 +38,8 @@ test:
 
 about:
   home: https://vegafusion.io
-  license: AGPL-3.0-or-later
-  license_family: GPL
+  license: BSD-3
+  license_family: BSD
   license_file:
     - LICENSE
     - THIRDPARTY.yml
@@ -49,7 +49,7 @@ about:
     VegaFusion provides serverside acceleration for the Vega visualization grammer. The vegafusion-python-embed
     package is generally used as a dependency of higher-level, pure-Python, packages like vegafusion-jupyter.
   doc_url: https://vegafusion.io
-  dev_url: https://github.com/vegafusion/vegafusion
+  dev_url: https://github.com/hex-inc/vegafusion
 
 extra:
   recipe-maintainers:
