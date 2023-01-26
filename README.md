@@ -3,13 +3,13 @@ About vegafusion-python-embed
 
 Home: https://vegafusion.io
 
-Package license: AGPL-3.0-or-later
+Package license: BSD-3
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vegafusion-python-embed-feedstock/blob/main/LICENSE.txt)
 
 Summary: Server-side acceleration for the Vega visualization grammar
 
-Development: https://github.com/vegafusion/vegafusion
+Development: https://github.com/hex-inc/vegafusion
 
 Documentation: https://vegafusion.io
 
