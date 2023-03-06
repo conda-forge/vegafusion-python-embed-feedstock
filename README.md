@@ -1,11 +1,11 @@
-About vegafusion-python-embed
-=============================
+About vegafusion-python-embed-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vegafusion-python-embed-feedstock/blob/main/LICENSE.txt)
 
 Home: https://vegafusion.io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vegafusion-python-embed-feedstock/blob/main/LICENSE.txt)
 
 Summary: Server-side acceleration for the Vega visualization grammar
 
