@@ -1,6 +1,6 @@
 {% set name = "vegafusion-python-embed" %}
 {% set name_under = "vegafusion_python_embed" %}
-{% set version = "1.1.3" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name_under[0] }}/{{ name_under }}/{{ name_under }}-{{ version }}.tar.gz
-  sha256: 8cbd5b98ccc3043fe25750aa9179f744c6e35adedc2577d47ae4979bc6690f82
+  sha256: 066576cf5ae2df165ed6599cbc6f7dede425190e887113e40cff821c7cbde057
 
 build:
   number: 0
