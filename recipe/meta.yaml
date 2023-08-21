@@ -21,6 +21,10 @@ requirements:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('rust') }}
+    - python                              # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - crossenv                            # [build_platform != target_platform]
+    - maturin                             # [build_platform != target_platform]
     - protobuf
     - cargo-bundle-licenses
   host:
@@ -31,6 +35,8 @@ requirements:
     - python
 
 test:
+  imports:
+    - vegafusion_embed
   requires:
     - pip
   commands:
